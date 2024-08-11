@@ -1,5 +1,6 @@
-import CalendarPage from '@/components/Calendar/Calendar'
+import { Metadata } from "next";
 import React from 'react'
+import CalendarPage from '@/components/Calendar/Calendar'
 export const metadata: Metadata = {
   title: "Google Calendar",
   description: "Google Calendar Interview",
