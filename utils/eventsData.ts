@@ -53,6 +53,16 @@ export const eventsData = [
       type: "event",
       classNames: ["webinar-event"],
     },
+    {
+      id: "5",
+      title: "Event NodeJs",
+      start: "2024-08-14T14:00:00",
+      end: "2024-08-14T15:00:00",
+      desc: "desc",
+      url: "https://meet.google.com/hwn-gsgz-oqx",
+      type: "event",
+      classNames: ["webinar-event"],
+    },
   ];
   
 
