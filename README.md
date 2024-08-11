@@ -59,20 +59,20 @@
 ]
 ```
 
-- id: id cho sự kiện.
-- title: Tên sự kiện.
-- start: Ngày và giờ bắt đầu.
-- end: Ngày và giờ kết thúc.
-- desc: Mô tả sự kiện (tùy chọn).
-- url: URL goolge meet cho sự kiện.
-- type: Loại sự kiện (ví dụ: "cuộc hẹn", "sự kiện").
-- classNames: Mảng tên lớp dùng cho mục đích tạo kiểu (tùy chọn).
-- rrule: Quy tắc lặp lại cho các sự kiện lặp lại.
-- freq: Sự kiện lặp lại hàng tuần.
-- interval: Khoảng thời gian giữa các lần xảy ra sự kiện.
-- byweekday: Chỉ định những ngày trong tuần mà sự kiện diễn ra.
-- dtstart: Chỉ định ngày và giờ bắt đầu của sự kiện xảy ra lần đầu tiên.
-- until: Chỉ định ngày và giờ kết thúc của chiến dịch.
+- id: Unique identifier for each event.
+- title: Title the event.
+- start: Start date and time.
+- end: End date and time.
+- desc: Description of the event.
+- url: URL goolge meet.
+- type: Type of event (e.g., "appointment" or "event").
+- classNames: CSS class names for styling
+- rrule: Recurrence rule.
+- freq: Frequency of recurrence.
+- interval: Interval between occurrences.
+- byweekday: Days of the week on which the event occurs.
+- dtstart: Start date and time for the recurrence.
+- until: End date for the recurrence.
 
 # 2:
 
@@ -84,12 +84,11 @@ URL github: https://github.com/nguyenvantanphatit/google-calendar
 
 # 4:
 
-- Tích hợp và tùy chỉnh FullCalendar.
-- Xử lý các sự kiện định kỳ bằng rrule của FullCalendar.
-- Quản lý trạng thái tương tác với các sự kiện.
+- Integrate and customize FullCalendar.
+- Handle recurring events using FullCalendar's rrule plugin.
 
 # 5:
 
-- Cải thiện giao diện và trải nghiệm người dùng để tương tác tốt hơn với các sự kiện.
-- Cải thiện các sự kiện định kỳ thêm nhiều tuỳ chọn hơn và đủ trường hợp hơn.
-- Triển khai lọc sự kiện, nhắc nhở, thông báo qua Gmail và chia sẻ liên kết lời mời.
+- Improve the user interface and experience for better event interaction.
+- Enhance recurring events with more options and comprehensive scenarios.
+- Implement event filtering, reminders, notifications via Gmail, and invite link sharing.
