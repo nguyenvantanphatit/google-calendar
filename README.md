@@ -85,7 +85,6 @@ URL github: https://github.com/nguyenvantanphatit/google-calendar
 # 4:
 
 - Integrate and customize FullCalendar.
-- Handle recurring events using FullCalendar's rrule plugin.
 
 # 5:
 
