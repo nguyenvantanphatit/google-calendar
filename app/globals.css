@@ -3,31 +3,134 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* --fc-small-font-size: none !important;
+  --fc-page-bg-color: none !important;
+  --fc-neutral-bg-color: none !important;
+  --fc-neutral-text-color: none !important;
+  --fc-border-color: none !important;
+  --fc-button-text-color: none !important;
+  --fc-button-bg-color: none !important;
+  --fc-button-border-color: none !important;
+  --fc-button-hover-bg-color: none !important;
+  --fc-button-hover-border-color: none !important;
+  --fc-button-active-bg-color: none !important;
+  --fc-button-active-border-color: none !important;
+  --fc-event-bg-color: none !important;
+  --fc-event-border-color: none !important;
+  --fc-event-text-color: none !important;
+  --fc-event-selected-overlay-color: none !important;
+  --fc-more-link-bg-color: none !important;
+  --fc-more-link-text-color: none !important;
+  --fc-event-resizer-thickness: none !important;
+  --fc-event-resizer-dot-total-width: none !important;
+  --fc-event-resizer-dot-border-width: none !important;
+  --fc-non-business-color: none !important;
+  --fc-bg-event-color: none !important;
+  --fc-bg-event-opacity: none !important;
+  --fc-highlight-color: none !important; */
+  --fc-today-bg-color: #CCFFFF !important;
+  --fc-button-bg-color: #0F4C81 !important;
+  --fc-button-border-color: #0F4C81 !important;
+  --fc-button-hover-bg-color: #0F4C81 !important;
+  --fc-button-hover-border-color: #0F4C81 !important;
+  --fc-button-active-bg-color: #0F4C81 !important;
+  --fc-button-active-border-color: #0F4C81 !important;
+  --fc-event-bg-color: #0F4C81 !important;
+  --fc-event-border-color: #0F4C81 !important;
+}
+html {
+  background-color: #CCFFFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.demo {
+  background: #5684AE;
+  background-color: #0F4C81;
+  color: #FFE4C8;
+  
+}
+.demo1 {
+  background: #F9BE81;
+  background-color: #E4F6ED;
+  
+}
+.fc-theme-standard td, .fc-theme-standard th {
+  border: 1px solid #E4F6ED;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.fc-daygrid-day-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.fc .fc-button-primary:disabled
+{
+  background: white !important;
+  color: #5684AE;
+  border: 1px solid #5684AE;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.fc .fc-toolbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 8px;
+  padding: 0 20px;
 }
+.fc .fc-toolbar-title {
+  color: #0F4C81;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.fc .fc-button-primary {
+  background: white;
+  border: none !important;
+  color: #5684AE;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+.fc .fc-button-primary:active {
+  border: none !important; 
+  outline: none !important; 
+}
+.fc-event.appointment-event {
+  background-color: #0F4C81 !important;
+  color: #E4F6ED !important; 
+  position: relative; 
+  overflow: hidden;
+}
+
+.fc-event.appointment-event::before {
+  content: '';
+  background-color: #F9BE81;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px; 
+}
+.fc-event.webinar-event {
+  background-color: #F9BE81 !important; 
+  border-color: #0F4C81 !important;
+  color: #E4F6ED !important; 
+  overflow: hidden;
+}
+.fc-event.webinar-event::before {
+  content: '';
+  background-color: #0F4C81;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px; 
+}
+
+/* .fc-day-today .fc-daygrid-day-number {
+  background-color: #0F4C81; 
+  color: white;
+  text-align: center;
+  border-radius: 0;
+} */
