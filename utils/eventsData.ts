@@ -31,8 +31,8 @@ export const eventsData = [
         interval: 1,
         byweekday: ["mo"],
         dtstart: "2024-08-09T09:00:00",
+        until: "2024-12-31"
       },
-      duration: "01:00",
       type: "appointment",
       classNames: ["appointment-event"],
     },
@@ -43,6 +43,13 @@ export const eventsData = [
       end: "2024-08-15T14:00:00",
       desc: "desc",
       url: "https://meet.google.com/hwn-gsgz-oqx",
+      rrule: {
+        freq: "weekly",
+        interval: 1,
+        byweekday: ["fr"],
+        dtstart: "2024-08-09T09:00:00",
+        until: "2024-12-31"
+      },
       type: "event",
       classNames: ["webinar-event"],
     },

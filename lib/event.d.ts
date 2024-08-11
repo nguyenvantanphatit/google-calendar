@@ -12,7 +12,7 @@ export interface Event {
       interval: number;
       byweekday: string[];
       dtstart: string;
+      until: string;
     };
-    duration?: string;
   }
   

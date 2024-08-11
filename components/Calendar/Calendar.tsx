@@ -30,7 +30,6 @@ const CalendarPage = () => {
         type: "",
         classNames: [],
         rrule: undefined,
-        duration: "",
     });
     const [hoveredEvent, setHoveredEvent] = useState<Event | null>(null);
     const calendarRef = useRef<FullCalendar>(null);
@@ -79,8 +78,8 @@ const CalendarPage = () => {
                 interval: 1,
                 byweekday: selectedDays.map(day => day.toLowerCase().substring(0, 2)),
                 dtstart: newEvent.start,
+                until: "2030-12-31"
             } : undefined,
-            duration: "01:00",
             classNames: newEvent.type === "appointment" ? ['appointment-event'] : ['webinar-event'],
         };
         setEvents([...events, eventToAdd]);
@@ -332,7 +331,7 @@ const CalendarPage = () => {
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="#5684AE" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 20.0024V15.0024M8 20.0024C8 20.5547 8.44772 21.0024 9 21.0024H15C15.5523 21.0024 16 20.5547 16 20.0024M8 20.0024H3C2.44772 20.0024 2 19.5547 2 19.0024V15.0024C2 13.3456 3.34315 12.0024 5 12.0024C6.65685 12.0024 8 13.3456 8 15.0024M16 20.0024V15.0024M16 20.0024H21C21.5523 20.0024 22 19.5547 22 19.0024V15.0024C22 13.3456 20.6569 12.0024 19 12.0024C17.3431 12.0024 16 13.3456 16 15.0024M16 15.0024C16 13.3456 14.6569 12.0024 13 12.0024H11C9.34315 12.0024 8 13.3456 8 15.0024M15 6.00244C15 7.6593 13.6569 9.00244 12 9.00244C10.3431 9.00244 9 7.6593 9 6.00244C9 4.34559 10.3431 3.00244 12 3.00244C13.6569 3.00244 15 4.34559 15 6.00244ZM6.5 7.50244C6.5 8.33087 5.82843 9.00244 5 9.00244C4.17157 9.00244 3.5 8.33087 3.5 7.50244C3.5 6.67401 4.17157 6.00244 5 6.00244C5.82843 6.00244 6.5 6.67401 6.5 7.50244ZM20.5 7.50244C20.5 8.33087 19.8284 9.00244 19 9.00244C18.1716 9.00244 17.5 8.33087 17.5 7.50244C17.5 6.67401 18.1716 6.00244 19 6.00244C19.8284 6.00244 20.5 6.67401 20.5 7.50244Z" stroke="black" stroke-width="null" className="my-path"></path>
                                     </svg>
-                                    <span className="text-[#5684AE] font-bold text-2xl">Information {hoveredEvent.type}</span>
+                                    <span className="text-[#5684AE] font-bold text-2xl capitalize mt-2">{hoveredEvent.type}</span>
                                 </div>
                             </div>
                             <div className="p-6 rounded-xl bg-white">
