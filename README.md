@@ -59,22 +59,20 @@
 ]
 ```
 
-Mô tả trường:
-
-id: id cho sự kiện.
-title: Tên sự kiện.
-start: Ngày và giờ bắt đầu.
-end: Ngày và giờ kết thúc.
-desc: Mô tả sự kiện (tùy chọn).
-url: URL goolge meet cho sự kiện.
-type: Loại sự kiện (ví dụ: "cuộc hẹn", "sự kiện").
-classNames: Mảng tên lớp dùng cho mục đích tạo kiểu (tùy chọn).
-rrule: Quy tắc lặp lại cho các sự kiện lặp lại.
-freq: Sự kiện lặp lại hàng tuần.
-interval: Khoảng thời gian giữa các lần xảy ra sự kiện.
-byweekday: Chỉ định những ngày trong tuần mà sự kiện diễn ra.
-dtstart: Chỉ định ngày và giờ bắt đầu của sự kiện xảy ra lần đầu tiên.
-until: Chỉ định ngày và giờ kết thúc của chiến dịch.
+- id: id cho sự kiện.
+- title: Tên sự kiện.
+- start: Ngày và giờ bắt đầu.
+- end: Ngày và giờ kết thúc.
+- desc: Mô tả sự kiện (tùy chọn).
+- url: URL goolge meet cho sự kiện.
+- type: Loại sự kiện (ví dụ: "cuộc hẹn", "sự kiện").
+- classNames: Mảng tên lớp dùng cho mục đích tạo kiểu (tùy chọn).
+- rrule: Quy tắc lặp lại cho các sự kiện lặp lại.
+- freq: Sự kiện lặp lại hàng tuần.
+- interval: Khoảng thời gian giữa các lần xảy ra sự kiện.
+- byweekday: Chỉ định những ngày trong tuần mà sự kiện diễn ra.
+- dtstart: Chỉ định ngày và giờ bắt đầu của sự kiện xảy ra lần đầu tiên.
+- until: Chỉ định ngày và giờ kết thúc của chiến dịch.
 
 # 2:
 
